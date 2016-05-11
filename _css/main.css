@@ -1,0 +1,45 @@
+@import "_grid.css";
+
+:root {
+    --textColor: #585858;
+    --green: #7bd0c1;
+    --magenta: #c75b9b;
+    --red:#f2849e;
+    --lightblue: #7ecaf6;
+    --purple: #ae85ca;
+    --violet: #8499e7;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif; 
+    color: var(--textColor); 
+}
+
+header {
+}
+
+.startpage {
+    & h1 {
+        text-align: center;
+    }
+}
+
+.instafeed {
+    &__item {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid var(--magenta);
+        &:nth-child(n+2) {
+            border-left: 1px solid var(--magenta);
+        }  
+    }
+
+    &__image {
+        display: block;
+        transition: transform 0.5s ease;
+        
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

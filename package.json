@@ -1,0 +1,31 @@
+{
+  "name": "woodhillstudios.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woodhillstudios/woodhillstudios.github.io.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/woodhillstudios/woodhillstudios.github.io/issues"
+  },
+  "homepage": "https://github.com/woodhillstudios/woodhillstudios.github.io#readme",
+  "devDependencies": {
+    "babel-core": "^6.8.0",
+    "babel-preset-es2015": "^6.6.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "postcss-cssnext": "^2.5.2",
+    "postcss-import": "^8.1.2"
+  }
+}
