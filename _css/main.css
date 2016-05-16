@@ -1,4 +1,5 @@
 @import "_grid.css";
+@import "_typography.css";
 
 :root {
     --textColor: #585858;
@@ -15,12 +16,41 @@ body {
     color: var(--textColor); 
 }
 
+nav {
+    position: fixed;
+    right: 2em;
+    top: 2em;
+
+}
+
 header {
+    padding: 50px 0 40px;
+
+    & a {
+        color: inherit;
+
+        &:hover {
+            color: var(--violet);
+            text-decoration: none;
+        }
+    }
+}
+
+.l--center {
+    text-align: center;
 }
 
 .startpage {
     & h1 {
         text-align: center;
+        margin: 0;
+        line-height: 1.3em;
+    }
+
+    & .lead {
+        margin-top: 45px;
+        text-align: center;
+        font-size: 1.25em;
     }
 }
 
@@ -28,18 +58,38 @@ header {
     &__item {
         padding-bottom: 15px;
         margin-bottom: 15px;
-        border-bottom: 1px solid var(--magenta);
-        &:nth-child(n+2) {
-            border-left: 1px solid var(--magenta);
-        }  
+
+        &__meta {
+            padding: 15px 0;
+            
+            & span i {
+                padding-right: 5px;
+            }
+        }
+
+        &__likes {
+            color: var(--textColor);
+            margin-right: 15px;
+        }
+
+        a {
+            color: inherit;
+        }
     }
 
     &__image {
+        color: var(--textColor);
         display: block;
         transition: transform 0.5s ease;
         
         &:hover {
             transform: scale(1.1);
+            text-decoration: none;
         }
     }
+}
+
+footer {
+    background-color: #f6f6f6;
+    padding: 50px; 
 }

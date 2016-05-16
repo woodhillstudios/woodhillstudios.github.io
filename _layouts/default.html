@@ -6,14 +6,14 @@
         <meta name="description" content="{{ page.description}}">
         <meta name="keywords" content="{{ page.keywords }}">
         <title>{{ page.title }}</title>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="/dist/app.css">
     </head>
     <body class="{{ page.type }}">
         {% include header.html %}
-        <div class="container">
             {{ content }}
-        </div>
         {% include footer.html %}
         <script type="text/javascript" src="dist/main.js"></script>
     </body>

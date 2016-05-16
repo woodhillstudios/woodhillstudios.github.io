@@ -1,0 +1,10 @@
+h1 {
+    display: inline-block;
+    font-size: 4em;
+    font-weight: 700;
+    border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
+} 
+
+.fa {
+    color: #585858;
+}
