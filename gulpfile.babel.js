@@ -5,6 +5,7 @@ import cssnext from 'postcss-cssnext';
 import rename from 'gulp-rename';
 import atimport from 'postcss-import';
 import babel from 'gulp-babel';
+import uglify from 'gulp-uglify';
 import concat from 'gulp-concat';
 
 const stylesheets = ['_css/*.css']; 
@@ -29,6 +30,7 @@ gulp.task('js', () => {
     gulp.src(['_js/vendor/*.js', '_js/main.js'])
         .pipe(sourcemaps.init())
         .pipe(concat('main.js'))
+        .pipe(uglify())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('dist/'));
 });
