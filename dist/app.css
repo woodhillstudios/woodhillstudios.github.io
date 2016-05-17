@@ -1360,25 +1360,62 @@ output {
         margin-left: 83.33333%; }
         .offset-xl-11 {
     margin-left: 91.66667%; } }
+h1 {
+    display: inline-block;
+    font-size: 4em;
+    font-weight: 700;
+    border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
+}
+.fa {
+    color: #585858;
+}
 body {
     font-family: 'Source Sans Pro', sans-serif; 
     color: #585858; 
 }
+nav {
+    position: fixed;
+    right: 2em;
+    top: 2em;
+
+}
 header {
+    padding: 50px 0 40px
+}
+header a {
+    color: inherit; }
+header a:hover {
+    color: #8499e7;
+    text-decoration: none; }
+.l--center {
+    text-align: center;
 }
 .startpage {
 }
 .startpage h1 {
-    text-align: center; }
+    text-align: center;
+    margin: 0;
+    line-height: 1.3em; }
+.startpage .lead {
+    margin-top: 45px;
+    text-align: center;
+    font-size: 1.25em; }
 .instafeed {
 }
 .instafeed__item {
     padding-bottom: 15px;
     margin-bottom: 15px;
-    border-bottom: 1px solid #c75b9b; }
-.instafeed__item:nth-child(n+2) {
-    border-left: 1px solid #c75b9b; }
+    a {
+        color: inherit; } }
+.instafeed__item__meta {
+    padding: 15px 0; }
+.instafeed__item__meta span i {
+    padding-right: 5px; }
+.instafeed__item__likes {
+    color: #585858;
+    margin-right: 15px; }
 .instafeed__image {
+    color: #585858;
     display: block;
     -webkit-transition: -webkit-transform 0.5s ease;
     transition: -webkit-transform 0.5s ease;
@@ -1386,6 +1423,11 @@ header {
     transition: transform 0.5s ease, -webkit-transform 0.5s ease; }
 .instafeed__image:hover {
     -webkit-transform: scale(1.1);
-            transform: scale(1.1); }
+            transform: scale(1.1);
+    text-decoration: none; }
+footer {
+    background-color: #f6f6f6;
+    padding: 50px; 
+}
 
 /*# sourceMappingURL=dist/main.css.map */
