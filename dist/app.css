@@ -1569,7 +1569,8 @@ nav[role="menu"] .close:before, nav[role="menu"] .close:after {
     background-repeat: no-repeat;
     background-size: 2em 2em; }
 body.js-menu-toggled {
-    overflow-y: hidden 
+    overflow-y: hidden;
+    height: 100vh 
 }
 body.js-menu-toggled nav[role="menu"] {
     -webkit-transform: translateX(0);

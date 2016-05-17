@@ -266,6 +266,7 @@ nav[role="menu"] {
 
 body.js-menu-toggled {
     overflow-y: hidden;
+    height: 100vh;
 
     & nav[role="menu"] {
         transform: translateX(0);
