@@ -16,13 +16,6 @@ body {
     color: var(--textColor); 
 }
 
-nav {
-    position: fixed;
-    right: 2em;
-    top: 2em;
-
-}
-
 header {
     padding: 50px 0 40px;
 
@@ -38,7 +31,7 @@ header {
     & nav {
         position: fixed;
         right: 2em;
-        top: 2em;
+        top: 1em;
         z-index: 10000;
     }
 
