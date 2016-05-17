@@ -9863,6 +9863,15 @@ $(document).ready(function() {
         event.preventDefault();
         $('body').removeClass('js-menu-toggled');
     });
+
+    $('body').on('click', function(event) {
+        $('body').removeClass('js-menu-toggled');
+    });
+
+    $('body nav[role="menu"]').on('click', function(event) {
+        event.stopPropagation();
+        event.preventDefault();  
+    });
 });
 
 //# sourceMappingURL=main.js.map
