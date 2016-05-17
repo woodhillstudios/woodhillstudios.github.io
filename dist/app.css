@@ -1586,5 +1586,12 @@ body {
 body > .container, body footer {
     -webkit-transition: opacity 0.45s ease;
     transition: opacity 0.45s ease; }
+@media screen and (max-width: 736px) {
+    header nav {
+        right: 0em;
+        top: 0.5em;
+        font-size: 14px;
+    }
+}
 
 /*# sourceMappingURL=dist/main.css.map */
